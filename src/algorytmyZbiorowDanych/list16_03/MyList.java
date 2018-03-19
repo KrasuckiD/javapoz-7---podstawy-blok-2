@@ -1,4 +1,4 @@
-package algorytmyZbiorowDanych.list;
+package algorytmyZbiorowDanych.list16_03;
 
 public class MyList {
     Element head;

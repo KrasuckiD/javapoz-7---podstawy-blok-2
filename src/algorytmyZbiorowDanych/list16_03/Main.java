@@ -1,4 +1,4 @@
-package algorytmyZbiorowDanych.list;
+package algorytmyZbiorowDanych.list16_03;
 
 public class Main {
     // zaimplementuj liste dwukierunkowa, dodaj dane, sprawdz w debugerze wyglad i przejdz po elementach
