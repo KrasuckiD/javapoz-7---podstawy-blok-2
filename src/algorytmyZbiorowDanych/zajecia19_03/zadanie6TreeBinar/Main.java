@@ -20,6 +20,9 @@ public class Main {
         nodeC.addRightChild(nodeG);
 
         System.out.println(heightOfTree(nodeA));
+        printPreOrder(nodeA);
+        printInOrder(nodeA);
+        printPostOrder(nodeA);
     }
 
     private static int heightOfTree(Node node){
@@ -31,4 +34,36 @@ public class Main {
         return Math.max(leftHeight, rightHeight) + 1;
     }
 
+
+    private static void printPreOrder (Node node) {
+        System.out.print(node.toString() + " ");
+        if (node.getLeft() != null) {
+            printPreOrder(node.getLeft());
+        }
+        if (node.getRight() != null) {
+            printPreOrder(node.getRight());
+        }
+    }
+
+    private static void printInOrder (Node node){
+        if (node.getLeft() != null) {
+            printPreOrder(node.getLeft());
+        }
+        System.out.print(node.toString() + " ");
+        if (node.getRight() != null) {
+            printPreOrder(node.getRight());
+        }
+    }
+
+
+    private static void printPostOrder (Node node){
+        if (node.getLeft() != null) {
+            printPreOrder(node.getLeft());
+        }
+        if (node.getRight() != null) {
+            printPreOrder(node.getRight());
+        }
+        System.out.print(node.toString() + " ");
+
+    }
 }

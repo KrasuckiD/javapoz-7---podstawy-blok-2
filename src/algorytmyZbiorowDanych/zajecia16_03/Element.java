@@ -1,4 +1,4 @@
-package algorytmyZbiorowDanych.list16_03;
+package algorytmyZbiorowDanych.zajecia16_03;
 
 public class Element {
     Element previous;
