@@ -2,14 +2,15 @@ package algorytmyZbiorowDanych.zajecia21_03.zadanie4BubleSort;
 
 import java.util.Arrays;
 
-public class Main {
+public class BubbleSort {
     public static void main(String[] args) {
-        Integer[] array = {3, 4, 5, 2, 1};
+        Integer[] array = {3, 4, 5, 2, 1,6,8,9,1,7,8,5,6};
         bubbleSort(array);
         System.out.println(Arrays.asList(array));
+
     }
 
-    private static void bubbleSort(Integer[] array) {
+    public static void bubbleSort(Integer[] array) {
         boolean isSorted = true;
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length - 1; j++) {
@@ -20,7 +21,7 @@ public class Main {
                     array[j] = temp;
                 }
             }
-            if(isSorted){
+            if (isSorted) {
                 break;
             }
             isSorted = true;
